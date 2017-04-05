@@ -9,18 +9,10 @@ place to start.
 
 This template represents a default grails application that only contains the `metridoc-core` plugin.  The template is 
 actually a running application.  No MetriDoc applications are installed, so by itself it doesn't do
-anything particularily interesting besides configuring security.  The following commands will get it working
+anything particularily interesting besides configuring security.  
 
-```bash
-git clone https://github.com/metridoc/metridoc-template-app.git
-cd metridoc-template-app
-./grailsw --refresh-dependencies --non-interactive tA :unit --stacktrace 
-./grailsw --refresh-dependencies --non-interactive maven-install --stacktrace
-
-make sure you have file grails-app/conf/UrlMappings.groovy and it is correctly configured
-
-./grailsw run-app
-```
+Please follow the installation guide at this link to install and run the app:
+https://github.com/metridoc/metridoc-grails
 
 You should see a simple home page listing installed applications (which there are none).  You can log in as admin with
 user name `admin` and password `password` to see the admin components.  At this point the application is running on an
