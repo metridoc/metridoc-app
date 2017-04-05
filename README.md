@@ -23,8 +23,6 @@ Tomcat server, or run `./grailsw war` to create a war archive of the application
 servle container.  MetriDoc components have been tested on Jetty and Tomcat.  Tried and failed to get the application to 
 work on Glassfish.
 
-#### Setting up the Data Source
-
 
 
 
