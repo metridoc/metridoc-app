@@ -11,11 +11,11 @@ grails.project.war.file = "target/${appName}.war"
 // metridoc-app. These 5 lines will cause the application to use the local instance of metridoc-grails
 // instead of the remote instance online
 
-// grails.plugin.location."metridoc-core" = "../metridoc-grails/metridoc-grails-core" 
-// grails.plugin.location."metridoc-illiad" = "../metridoc-grails/metridoc-grails-illiad" 
-// grails.plugin.location."metridoc-funds" = "../metridoc-grails/metridoc-grails-funds" 
-// grails.plugin.location."metridoc-bd" = "../metridoc-grails/metridoc-grails-bd" 
-// grails.plugin.location."metridoc-rid" = "../metridoc-grails/metridoc-grails-rid"
+grails.plugin.location."metridoc-core" = "../metridoc-grails/metridoc-grails-core" 
+grails.plugin.location."metridoc-illiad" = "../metridoc-grails/metridoc-grails-illiad" 
+grails.plugin.location."metridoc-funds" = "../metridoc-grails/metridoc-grails-funds" 
+grails.plugin.location."metridoc-bd" = "../metridoc-grails/metridoc-grails-bd" 
+grails.plugin.location."metridoc-rid" = "../metridoc-grails/metridoc-grails-rid"
 
 grails.project.fork = [
         // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
