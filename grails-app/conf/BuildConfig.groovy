@@ -11,11 +11,12 @@ grails.project.war.file = "target/${appName}.war"
 // metridoc-app. These 5 lines will cause the application to use the local instance of metridoc-grails
 // instead of the remote instance online
 
-// grails.plugin.location."metridoc-core" = "../metridoc-grails/metridoc-grails-core" 
-// grails.plugin.location."metridoc-illiad" = "../metridoc-grails/metridoc-grails-illiad" 
-// grails.plugin.location."metridoc-funds" = "../metridoc-grails/metridoc-grails-funds" 
-// grails.plugin.location."metridoc-bd" = "../metridoc-grails/metridoc-grails-bd" 
-// grails.plugin.location."metridoc-rid" = "../metridoc-grails/metridoc-grails-rid"
+grails.plugin.location."metridoc-core" = "../metridoc-grails/metridoc-grails-core" 
+grails.plugin.location."metridoc-illiad" = "../metridoc-grails/metridoc-grails-illiad" 
+grails.plugin.location."metridoc-funds" = "../metridoc-grails/metridoc-grails-funds" 
+grails.plugin.location."metridoc-bd" = "../metridoc-grails/metridoc-grails-bd" 
+grails.plugin.location."metridoc-rid" = "../metridoc-grails/metridoc-grails-rid"
+grails.plugin.location."metridoc-gate" = "../metridoc-grails/metridoc-grails-gate"
 
 grails.project.fork = [
         // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
@@ -77,6 +78,7 @@ grails.project.dependency.resolution = {
             compile (":metridoc-rid:${metridocVersion}")
             compile (":metridoc-bd:${metridocVersion}")
             compile (":metridoc-funds:${metridocVersion}")
+            compile (":metridoc-gate:${metridocVersion}")
 
         }
         else {
@@ -90,6 +92,7 @@ grails.project.dependency.resolution = {
             compile(":metridoc-rid:${getVersion('metridoc-rid')}")
             compile(":metridoc-bd:${getVersion('metridoc-bd')}")
             compile(":metridoc-funds:${getVersion('metridoc-bd')}")
+            compile(":metridoc-gate:${getVersion('metridoc-gate')}")
         }
 
         compile (":metridoc-counter:0.6") {
